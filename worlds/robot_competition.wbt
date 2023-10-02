@@ -9,15 +9,15 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.45634670773340774 -0.5895561775173035 -0.6664616987434951 4.3773696050033255
-  position 0.4689783634741021 -1.0826014091263374 2.559100606853757
+  orientation 0.45661441397945707 0.5132233869769062 -0.7267083541601471 1.9001203744999595
+  position 0.17632028112026443 2.607263785610582 4.884363076034683
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
 RectangleArena {
-  floorSize 2.5 2.5
+  floorSize 2.5 3
   wallHeight 0.05
 }
 Solid {
@@ -756,6 +756,62 @@ Solid {
     }
   ]
   name "solid(51)"
+}
+Solid {
+  translation -0.62672 -1.25168 0
+  rotation 0 0 1 1.5707996938995747
+  children [
+    Shape {
+      appearance FormedConcrete {
+      }
+      geometry Box {
+        size 0.01 1.25 0.1
+      }
+    }
+  ]
+  name "solid(82)"
+}
+Solid {
+  translation 0.74328 -1.25168 0
+  rotation 0 0 1 1.5707996938995747
+  children [
+    Shape {
+      appearance FormedConcrete {
+      }
+      geometry Box {
+        size 0.01 1 0.1
+      }
+    }
+  ]
+  name "solid(83)"
+}
+Solid {
+  translation -0.74672 1.24832 0
+  rotation 0 0 1 1.5707996938995747
+  children [
+    Shape {
+      appearance FormedConcrete {
+      }
+      geometry Box {
+        size 0.01 1 0.1
+      }
+    }
+  ]
+  name "solid(84)"
+}
+Solid {
+  translation 0.62328 1.24832 0
+  rotation 0 0 1 1.5707996938995747
+  children [
+    Shape {
+      appearance FormedConcrete {
+      }
+      geometry Box {
+        size 0.01 1.25 0.1
+      }
+    }
+  ]
+  name "solid(85)"
 }
 Solid {
   translation -0.12672 -0.75168 0
