@@ -9,8 +9,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.45661441397945707 0.5132233869769062 -0.7267083541601471 1.9001203744999595
-  position 0.17632028112026443 2.607263785610582 4.884363076034683
+  orientation 0.31628071430954174 0.21767325859820927 -0.9233552199706694 2.1940968747692713
+  position 1.4350009478351207 1.9226719845660565 1.014873273758943
 }
 TexturedBackground {
 }
@@ -1184,9 +1184,10 @@ E-puck {
   ]
 }
 E-puck {
-  translation 1.15 1.1 0
+  translation 1.21 1.1 0
+  rotation 0 0 1 -1.5707953071795862
   name "e-puck 1"
-  controller "robot_competition"
+  controller "bfs_maze"
 }
 E-puck {
   translation -1.17 1.09 0
