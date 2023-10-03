@@ -5,12 +5,13 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/FormedConcrete.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.31628071430954174 0.21767325859820927 -0.9233552199706694 2.1940968747692713
-  position 1.4350009478351207 1.9226719845660565 1.014873273758943
+  orientation 0.43028750861403436 0.33559264315968673 -0.8379917886159879 2.1210537976977575
+  position 0.9947996135088955 5.008230755515274 6.830404605412834
 }
 TexturedBackground {
 }
@@ -18,6 +19,9 @@ TexturedBackgroundLight {
 }
 RectangleArena {
   floorSize 2.5 3
+  floorAppearance Parquetry {
+    type "light strip"
+  }
   wallHeight 0.05
 }
 Solid {
@@ -800,14 +804,14 @@ Solid {
   name "solid(84)"
 }
 Solid {
-  translation 0.62328 1.24832 0
+  translation 0.50328 1.24832 0
   rotation 0 0 1 1.5707996938995747
   children [
     Shape {
       appearance FormedConcrete {
       }
       geometry Box {
-        size 0.01 1.25 0.1
+        size 0.01 1.5 0.1
       }
     }
   ]
@@ -1176,21 +1180,22 @@ Solid {
   name "solid(2)"
 }
 E-puck {
-  translation 1.14 -1.14 0
+  translation 0.2 1.2 -6.36863e-07
+  rotation -0.9815440826303106 -7.0596005943054414e-09 0.19123601609901345 -5.307179586466759e-06
   name "e-puck 2"
-  controller "robot_competition"
+  controller "wall_follower"
   controllerArgs [
     ""
   ]
 }
 E-puck {
-  translation 1.21 1.1 0
-  rotation 0 0 1 -1.5707953071795862
+  translation 1.21 1.2 0
+  rotation 0 0 1 1.01503e-06
   name "e-puck 1"
-  controller "bfs_maze"
+  controller "wall_follower"
 }
 E-puck {
-  translation -1.17 1.09 0
+  translation -0.81 1.2 0
   name "e-puck 0"
-  controller "robot_competition"
+  controller "wall_follower"
 }
